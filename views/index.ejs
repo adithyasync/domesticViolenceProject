@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Haven - Domestic Violence Support</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Section -->
+    <section id="section1" class="section background-container d-flex flex-column justify-content-center text-center">
+        <div class="container homepage-info">
+            <h1 class="homepage-head">We are here for you... <span>Believe in Us</span></h1>
+            <p class="homepage-para">You came here helpless, but you'll leave with a new life.</p>
+            <button class="btn btn-primary homepage-btn" onclick="displaySection('section2')">Dive In</button>
+        </div>
+    </section>
+
+    <!-- About & Services Section -->
+    <section id="section2" class="section d-none text-center">
+      <div class="d-flex flex-column justify-content-center">
+      <div class="d-flex flex-row">
+        <div class="container main-page">
+            <img src="https://img.freepik.com/free-vector/male-female-hands-holding-equality-gender-symbols-man-woman-with-feminine-masculine-signs-flat-vector-illustration-balance-parity-concept-banner-website-design-landing-web-page_74855-24908.jpg" class="home-page-img" alt="Support Image"/>
+            <p>Get the Solutions</p>
+            <button class="btn btn-outline-primary" onclick="displaySection('section1')">Back</button>
+            <button class="btn btn-primary" onclick="displaySection('section3')">Next</button>
+        </div>
+        <div class="container main-page">
+            <img src="https://img.freepik.com/premium-vector/sleek-professional-logo-design-law-firm-featuring-clean-lines-minimalist-aesthetic-design-clean-minimalist-logo-ngo-promoting-social-justice_538213-48381.jpg" class="home-page-img" alt="Support Image"/>
+            <p>Contact Lawyers & NGO's</p>
+            <button class="btn btn-outline-primary" onclick="displaySection('section1')">Back</button>
+            <button class="btn btn-primary" onclick="displaySection('section6')">Next</button>
+        </div>
+      </div>
+      <div class="d-flex flex-row">
+        <div class="container main-page">
+            <img src="https://media.istockphoto.com/id/1352337061/vector/stop-violence-against-women-womens-rights-stop-female-abuse-poster-banner-and-background.jpg?s=612x612&w=0&k=20&c=Rn8FscwXXEQyOHoEuxUecS1iMo_FIWNQg_CdR702xLI=" class="home-page-img" alt="Support Image"/>
+            <p>Resources & Information</p>
+            <button class="btn btn-outline-primary" onclick="displaySection('section1')">Back</button>
+            <button class="btn btn-primary" onclick="displaySection('section7')">Next</button>
+        </div>
+        
+      </div>
+      </div>
+    </section>
+
+    <!-- Self-Assessment Section -->
+    <section id="section3" class="section d-none text-center">
+        <div class="container main-page">
+          <div class="container main-page">
+            <img src="https://thumbs.dreamstime.com/z/chatbot-customer-service-abstract-concept-vector-illustration-bot-ai-retail-e-commerce-self-experience-online-client-support-206062508.jpg" class="home-page-img" alt="Support Image"/>
+            <p>Chat with ChatBot</p>
+        </div>
+        <div class="container main-page">
+            <img src="https://img.freepik.com/premium-vector/survivorship-care-vector-illustration_1237743-59489.jpg" class="home-page-img" alt="Support Image"/>
+            <p>Data base solutions</p>
+            <button class="btn btn-primary" onclick="displaySection('section9')">Next</button>
+        </div>
+            <h1>Solutions</h1>
+            <button class="btn btn-outline-primary" onclick="displaySection('section2')">Back</button>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="section4" class="section d-none text-center">
+        <div class="container main-page">
+            <h1>Resources & Information</h1>
+            <button class="btn btn-outline-primary" onclick="displaySection('section3')">Back</button>
+            <button class="btn btn-primary" onclick="displaySection('section5')">Next</button>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section id="section5" class="section d-none text-center">
+        <div class="container main-page">
+            <h1>Chat with Chatbot</h1>
+            <button class="btn btn-outline-primary" onclick="displaySection('section4')">Back</button>
+        </div>
+    </section>
+    <!--Contact page -->
+    <section id="section6" class="section d-none text-center">
+        <div class="container main-page">
+            <h1>Contact Lawyers & NGOs</h1>
+            <p>We have partnered with trusted legal professionals and organizations to provide the support you need.</p>
+            
+            <div class="contact-card">
+                <h3>Legal Aid Foundation</h3>
+                <p>Specialized in domestic violence cases.</p>
+                <p><strong>Email:</strong> support@legalaidfoundation.org</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <button class="btn btn-info" onclick="contactSupport('Legal Aid Foundation')">Contact</button>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Women’s Shelter Organization</h3>
+                <p>Provides safe spaces and emergency housing.</p>
+                <p><strong>Email:</strong> info@womensshelter.org</p>
+                <p><strong>Phone:</strong> (555) 234-5678</p>
+                <button class="btn btn-info" onclick="contactSupport('Women’s Shelter Organization')">Contact</button>
+            </div>
+            
+            <div class="contact-card">
+                <h3>SafeHands Law Firm</h3>
+                <p>Experienced lawyers in family law and domestic abuse cases.</p>
+                <p><strong>Email:</strong> contact@safehandslaw.com</p>
+                <p><strong>Phone:</strong> (555) 345-6789</p>
+                <button class="btn btn-info" onclick="contactSupport('SafeHands Law Firm')">Contact</button>
+            </div>
+            
+            <button class="btn btn-outline-primary mt-4" onclick="displaySection('section2')">Back</button>
+        </div>
+    </section>
+    <!-- Resources & Information -->
+    <section id="section7" class="section d-none text-center">
+        <div class="container main-page">
+            <h1>Resources & Information</h1>
+            <p>Access important information and resources to help you navigate through difficult times.</p>
+            
+            <div class="resource-card">
+                <h3>Understanding Domestic Violence</h3>
+                <p>Learn about the different forms of abuse, signs to look out for, and ways to seek help.</p>
+                <a href="https://www.thehotline.org/identify-abuse/" target="_blank" class="btn btn-info">Learn More</a>
+            </div>
+            
+            <div class="resource-card">
+                <h3>Legal Rights & Support</h3>
+                <p>Know your legal rights and the protections available for domestic violence survivors.</p>
+                <a href="https://www.womenslaw.org/" target="_blank" class="btn btn-info">Learn More</a>
+            </div>
+            
+            <div class="resource-card">
+                <h3>Creating a Safety Plan</h3>
+                <p>Step-by-step guidance to create a personal safety plan tailored to your situation.</p>
+                <a href="https://www.domesticshelters.org/articles/escape-a-plan/create-a-safety-plan" target="_blank" class="btn btn-info">Learn More</a>
+            </div>
+            
+            <div class="resource-card">
+                <h3>Emotional & Mental Wellness</h3>
+                <p>Access articles and tools to support your emotional and mental well-being during challenging times.</p>
+                <a href="https://www.mentalhealth.gov/" target="_blank" class="btn btn-info">Learn More</a>
+            </div>
+            
+            <button class="btn btn-outline-primary mt-4" onclick="displaySection('section2')">Back</button>
+        </div>
+    </section>
+
+    <!-- Emergency Services -->
+    <section id="section8" class="section d-none text-center">
+        <div class="container main-page">
+            <h1>Emergency Services</h1>
+            <p>If you're in immediate danger, please contact emergency services.</p>
+            
+            <div class="emergency-card">
+                <h3>Call 911</h3>
+                <p>If you or someone else is in immediate danger, call 911 immediately.</p>
+                <button class="btn btn-danger">Call Now</button>
+            </div>
+            
+            <div class="emergency-card">
+                <h3>National Domestic Violence Hotline</h3>
+                <p><strong>Phone:</strong> 1-800-799-SAFE (7233)</p>
+                <p><strong>Text:</strong> Text "START" to 88788</p>
+                <button class="btn btn-danger">Contact Hotline</button>
+            </div>
+            
+            <button class="btn btn-outline-primary mt-4" onclick="displaySection('section2')">Back</button>
+        </div>
+    </section>
+    <section id="section9" class="section d-none text-center">
+        <h1>personalize Your solution by answering a few questions...</h1>
+     <div class="button-group">
+          <button class="btn btn-primary" onclick="displaySection('section3')">Back</button>
+          <button class="btn btn-success" onclick="displaySection('section11')">Next</button>
+      </div>
+    </section>
+    <section id="section11" class="section d-none text-center">
+        <div class="container body">
+            <h1>questions</h1>
+            <label for="age" class="h1">What is your age ?</label>
+            <input type="text" class="textarea" id="age" name="age" placeholder="Give your age here..." required>
+         </div>
+         <div class="button-group">
+            <button class="btn btn-primary" onclick="displaySection('section9')">Back</button>
+            <button class="btn btn-success" onclick="displaySection('section10')">Next</button>
+        </div>
+    </section>
+    <section id="section10" class="section d-none text-center">
+        <div class="container main-page">
+            <h1>Ask a Question</h1>
+            <p>Our database consists of usecases that has solved many victims previously. May your question find an answer...</p>
+            <form action="/get_response" method="POST" id="questionForm">
+                <div class="form-group">
+                    <label for="user_question" class="lableForm">Your Question:</label>
+                    <input type="text" class="inputForm" id="user_question" name="user_question" placeholder="Ask your question here" required>
+                </div>
+                <button type="submit" class="buttonForm">Submit</button>
+            </form>
+            <div class="mt-4" id="responseContainer" style="display: none;">
+                <h3>Answer:</h3>
+                <p id="response"><%= answer ? answer : "No response available" %></p> <!-- Dynamic answer to be shown here -->
+            </div>
+            <button class="btn btn-outline-primary mt-4" onclick="displaySection('section2')">Back</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Safe Haven. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
